@@ -59,11 +59,14 @@
  )
 
 ;; etags
- (defun create-tags (dir-name)
-     "Create tags file."
-     (interactive "DDirectory: ")
-     (eshell-command
-      (format "find %s -type f -name \"*.py\" | etags -" dir-name)))
+;; find . -type f -name '*.py' | xargs etags
+(defun create-tags (dir-name)
+    "Create tags file."
+    (interactive "DDirectory: ")
+    (shell-command
+        (format "find %s -type f -name \"*.py\" | xargs etags -" dir-name)
+    )
+)
 
 
 (custom-set-variables
@@ -341,8 +344,6 @@ matches."
 ; C-n, C-p for autocomplete
 (yas/global-mode 1)
 
-(require 'auto-complete-config)
-(ac-config-default)
 
 (setq ac-use-menu-map t)
 (define-key ac-menu-map "\C-n" 'ac-next)
@@ -360,7 +361,7 @@ matches."
  )
 (setq
  ac-auto-show-menu 0.1
- ;; ac-auto-start 3
+ ac-auto-start t
  ac-menu-height 20
  ac-modes (append ac-modes '(org-mode jde-mode latex-mode ledger-mode mail-mode
 message-mode text-mode))
@@ -480,7 +481,6 @@ message-mode text-mode))
 
 
 (ac-set-trigger-key "TAB")
-(setq ac-auto-start nil)
 
 
 
@@ -516,8 +516,8 @@ message-mode text-mode))
             ;; (set-face-background ediff-even-diff-face-B nil)
             ;; (set-face-foreground ediff-fine-diff-face-B nil)
             ;; Highlighted color of buffer B
-            (set-face-background ediff-fine-diff-face-B "#BCD2EE")
-            (set-face-foreground ediff-odd-diff-face-B "#aeaeae")
+            ;; (set-face-background ediff-fine-diff-face-B "#BCD2EE")
+            ;; (set-face-foreground ediff-odd-diff-face-B "#aeaeae")
             ;; (set-face-background ediff-odd-diff-face-B nil)
             ;; (set-face-foreground ediff-current-diff-face-C nil)
             ;; (set-face-background ediff-current-diff-face-C "#4a410d")
@@ -637,14 +637,15 @@ message-mode text-mode))
 (semantic-mode 1)
 
 ; Ecb
-(add-to-list 'load-path "~/.emacs.d/ecb/")
-(require 'ecb)
+;(add-to-list 'load-path "~/.emacs.d/ecb/")
+;(require 'ecb)
 
 ; Fix evil-mode with ecb
 (add-hook 'ecb-history-buffer-after-create-hook 'evil-emacs-state)
 (add-hook 'ecb-directories-buffer-after-create-hook 'evil-emacs-state)
 (add-hook 'ecb-methods-buffer-after-create-hook 'evil-emacs-state)
 (add-hook 'ecb-sources-buffer-after-create-hook 'evil-emacs-state)
+
 
 ; Ecb customization
 (setq stack-trace-on-error t)
@@ -654,11 +655,10 @@ message-mode text-mode))
 (setq ecb-options-version "2.40")
 (setq ecb-source-path (quote ("~/")))
 
-
 ; Nav
-;(add-to-list 'load-path "~/.emacs.d/emacs-nav/")
-;(require 'nav)
-;(nav-disable-overeager-window-splitting)
+(add-to-list 'load-path "~/.emacs.d/emacs-nav/")
+(require 'nav)
+(nav-disable-overeager-window-splitting)
 
 ;;(require 'imenu-tree)
 (add-hook 'python-mode-hook 'outline-minor-mode)
@@ -678,15 +678,19 @@ message-mode text-mode))
 ; Comment
 (global-set-key (kbd "C-:") 'comment-dwim-line)
 
+
+(require 'projectile)
+(setq projectile-use-native-indexing t)
+(setq projectile-enable-caching t)
+
 (add-hook 'python-mode-hook 'my-python-customizations)
 
 (defun my-python-customizations ()
-    ;; (define-key evil-normal-state-map " " 'jedi:goto-definition)
     (define-key evil-normal-state-map [return] 'jedi:goto-definition)
-    (define-key evil-normal-state-map [backspace] 'pop-global-mark)
+    (define-key evil-normal-state-map [backspace] 'jedi:goto-definition-pop-marker)
     (define-key python-mode-map (kbd "C-c C-d") 'add-docstring)
     (define-key python-mode-map (kbd "<tab>") 'jedi:complete)
-    (setq projectile-enable-caching t)
+    (define-key python-mode-map (kbd " ") 'save-buffer)
     (projectile-on)
 )
 
@@ -698,5 +702,105 @@ message-mode text-mode))
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
-
 (setenv "PATH" (concat ".:/usr/local/bin" (getenv "PATH")))
+
+;; (require 'python-magic)
+(require 'helm)
+
+
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
+
+;; Shell command interactive
+(setq shell-command-switch "-ic")
+
+(epy-setup-checker "pyflakes %f")
+(require 'highlight-indentation)
+(add-hook 'python-mode-hook 'highlight-indentation)
+
+(require 'flymake-python-pyflakes)
+(add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
+
+
+(add-hook 'python-mode-hook
+      (lambda ()
+        (unless (eq buffer-file-name nil) (flymake-mode 1)) ;dont invoke flymake on temporary buffers for the interpreter
+        (local-set-key [f2] 'flymake-goto-prev-error)
+        (local-set-key [f3] 'flymake-goto-next-error)
+        ))
+
+(add-hook 'nav-mode-hook 'evil-emacs-state)
+(add-hook 'shell-mode-hook 'evil-emacs-state)
+
+;; For rgrep in fish shell
+(setq shell-file-name "/bin/bash")
+
+;; Flymake for python. sudo pip install flymakes
+(require 'flymake-easy)
+(require 'flymake-python-pyflakes)
+(add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
+
+;; (require 'auto-complete-config)
+;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+
+
+
+;; Live completion with auto-complete
+;; (see http://cx4a.org/software/auto-complete/)
+(require 'auto-complete-config nil t)
+(ac-config-default)
+(setq completion-max-candidates 15)
+(setq completion-min-chars 3)
+
+
+
+
+
+;; (add-to-list 'ac-dictionary-directories (concat epy-install-dir "elpa-to-submit/auto-complete/dict/"))
+;; Do What I Mean mode
+;; (setq ac-dwim t)
+
+
+;; custom keybindings to use tab, enter and up and down arrows
+;; (define-key ac-complete-mode-map "\t" 'ac-expand)
+;; (define-key ac-complete-mode-map "\r" 'ac-complete)
+;; (define-key ac-complete-mode-map "\M-n" 'ac-next)
+;; (define-key ac-complete-mode-map "\M-p" 'ac-previous)
+
+
+;; Disabling Yasnippet completion
+;; (defun epy-snips-from-table (table)
+; Disabling Yasnippet completion
+;; (defun epy-snips-from-table (table)
+;;   (with-no-warnings
+;;     (let ((hashtab (ac-yasnippet-table-hash table))
+;;           (parent (ac-yasnippet-table-parent table))
+;;           candidates)
+;;       (maphash (lambda (key value)
+;;                  (push key candidates))
+;;                hashtab)
+;;       (identity candidates)
+;;       )))
+
+;; (defun epy-get-all-snips ()
+;;   (require 'yasnippet) ;; FIXME: find a way to conditionally load it
+;;   (let (candidates)
+;;     (maphash
+;;      (lambda (kk vv) (push (epy-snips-from-table vv) candidates)) yas/tables)
+;;     (apply 'append candidates))
+;;   )
+
+;;(setq ac-ignores (concatenate 'list ac-ignores (epy-get-all-snips)))
+
+;; ropemacs Integration with auto-completion
+;; (defun ac-ropemacs-candidates ()
+;;   (mapcar (lambda (completion)
+;;       (concat ac-prefix completion))
+;;     (rope-completions)))
+
+
+
+;; (defun ac-python-mode-setup ()
+;;   (add-to-list 'ac-sources 'ac-source-yasnippet))
+
+;; (add-hook 'python-mode-hook 'ac-python-mode-setup)

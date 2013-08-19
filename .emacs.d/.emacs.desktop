@@ -2,401 +2,203 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Apr 29 19:21:49 2013
+;; Created Mon Aug 19 19:48:19 2013
 ;; Desktop file format version 206
 ;; Emacs version 24.3.1
 
 ;; Global section:
 (setq desktop-missing-file-warning nil)
-(setq tags-file-name nil)
-(setq tags-table-list nil)
-(setq search-ring '("U" "command"))
-(setq regexp-search-ring nil)
-(setq register-alist '((113) (107)))
-(setq file-name-history '("/Users/gennad/z/zvq/zvooq/dataobjects.py" "/Users/gennad/z/zvq/zvooq.dev.conf" "/Users/gennad/z/zvq/zvooq/__init__.py" "/Users/gennad/.emacs.d/init.el" "/Users/gennad/z/zvq/zvooq/authz.py" "/Users/gennad/z/dreamindustries.co/web.js" "/Users/gennad/z/zvq/bin/calcdeps.py" "/Users/gennad/z/dreamindustries.co/README.md" "/Users/gennad/z/dreamindustries.co/routes/instagram.js" "/Users/gennad/z/dreamindustries.co/routes/index.js" "/Users/gennad/z/dreamindustries.co/routes/user.js" "/Users/gennad/z/dreamindustries.co/routes/index.js" "/Users/gennad/z/dreamindustries.co/web.js" "/Users/gennad/z/dreamindustries.co/routes/instagram.js" "/Users/gennad/z/dreamindustries.co/views/instagram.jade" "/Users/gennad/z/dreamindustries.co/routes/instagram.js" "/Users/gennad/z/dreamindustries.co/routes/index.js" "/Users/gennad/z/delme.py" "/Users/gennad/z/dreamindustries.co/views/layout.jade" "/Users/gennad/z/dreamindustries.co/routes/user.js" "/Users/gennad/z/dreamindustries.co/routes/index.js" "/Users/gennad/z/dreamindustries.co/worker.js" "/Users/gennad/z/dreamindustries.co/views/index.jade" "/Users/gennad/z/dreamindustries.co/app.js" "/Users/gennad/z/dreamindustries.co/routes/index.js" "/Users/gennad/z/dreamindustries.co/app.js" "/Users/gennad/z/dreamindustries.co/routes/user.js" "/Users/gennad/z/dreamindustries.co/routes/index.js" "/Users/gennad/z/dreamindustries.co/app.js" "/Users/gennad/z/dreamindustries.co/views/index.jade"))
+(setq tags-file-name "/Users/gennad/z/zvq/TAGS")
+(setq tags-table-list '("/Users/gennad/z/zvq/TAGS"))
+(setq search-ring '("pyflak" "flyma" "pyfl" "nav" "navr" "nav" "emacs-nav" "nav"))
+(setq regexp-search-ring '("user_payment" "user_slot_info" "local.zvq.me" "d2h34.zvq.me" "'"))
+(setq register-alist '((113) (24) (106) (105) (108)))
+(setq file-name-history '("/Users/gennad/.bash_profile" "~/z/zvq/workgroup" "/Users/gennad/.emacs.d/init.el" "/Users/gennad/z/zvq/Makefile" "~/z/zvq/TAGS" "/Users/gennad/z/zvq/TAGS" "~/z/zvq" "~/z/zvq/zvooq/db/" "~/z/zvq/" "/Users/gennad/.emacs.d/init.el" "~/z/zvq/" "/Users/gennad/.emacs.d/init.el" "/Users/gennad/z/zvooq-api/package.json" "~/z/zvq/" "/Users/gennad/z/zvq/zvooq/web/views/payment.py" "~/z/zvq/zvooq/web/views/" "/Users/gennad/.emacs.d/init.el" "/Users/gennad/z/zvq/zvooq/web/views/library.py" "/Users/gennad/z/zvq/src/zvqbilling/zvqbilling/zvqwm/config.py" "/Users/gennad/z/zvq/src/zvqbilling/zvqbilling/zvqwm/views.py" "/Users/gennad/z/zvq/djangoproj/settings_local.stage.py" "~/z/zvq/djangoproj/" "/Users/gennad/z/zvq/Install.txt" "/Users/gennad/z/zvqbilling/zvqbilling/zvqwm/views.py" "/Users/gennad/z/zvqbilling/zvqbilling/zvqwm/urls.py" "/Users/gennad/book2/singletone.py" "/Users/gennad/book2/crawler.py" "~/z/zvq/djangoproj/apps/zvq/api/" "/Users/gennad/z/zvq/djangoproj/apps/zvq/views/__init__.py" "/Users/gennad/z/zvq/djangoproj/apps/zvq/views/user_profile.py"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
-  "/Users/gennad/z/zvq/zvooq/cache.py"
-  "cache.py"
+  "/Users/gennad/z/zvq/zvooq/api/payment.py"
+  "payment.py<2>"
   'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  12375
-  '(26468 nil)
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  478
+  '(320 nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/zvq/zvooq/dataobjects.py"
-  "dataobjects.py"
+  "/Users/gennad/z/zvq/zvooq/db/tables.py"
+  "tables.py"
   'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  197
-  '(197 nil)
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  17409
+  '(27 nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/zvq/zvooq.dev.conf"
-  "zvooq.dev.conf"
-  'conf-unix-mode
-  '(global-whitespace-mode linum-mode global-auto-revert-mode whole-line-or-region-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  26
-  '(109 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/zvooq/__init__.py"
-  "__init__.py"
+  "/Users/gennad/z/zvq/zvooq/models/billing.py"
+  "billing.py"
   'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  2125
+  '(2209 nil)
   nil
   nil
-  '((tab-width . 8) (indent-tabs-mode)))
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/dreamindustries.co/Procfile"
-  "Procfile"
-  'fundamental-mode
-  '(global-whitespace-mode global-auto-revert-mode whole-line-or-region-mode workgroups-mode ecb-minor-mode)
-  18
-  '(nil nil)
+  "/Users/gennad/z/zvq/zvooq/db/mappers.py"
+  "mappers.py"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  11997
+  '(9474 nil)
   nil
   nil
-  '((buffer-file-coding-system . undecided-unix)))
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/dreamindustries.co/package.json"
-  "package.json"
-  'js-mode
-  '(global-whitespace-mode auto-complete-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  90
-  '(nil nil)
+  "/Users/gennad/z/zvq/zvooq/models/messaging.py"
+  "messaging.py"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  311
+  '(333 nil)
   nil
   nil
-  '((buffer-file-coding-system . undecided-unix)))
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/2013-homepage/README.md"
-  "README.md"
-  'fundamental-mode
-  '(global-whitespace-mode global-auto-revert-mode whole-line-or-region-mode workgroups-mode ecb-minor-mode)
-  145
-  '(nil nil)
+  "/Users/gennad/z/zvq/zvooq/web/routes.py"
+  "routes.py"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  16945
+  '(16348 nil)
   nil
   nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/.emacs.d/browse-kill-ring.el"
-  "browse-kill-ring.el"
-  'emacs-lisp-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  18428
-  '(18564 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . utf-8-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/.emacs.d/ac-comphist.dat"
-  "ac-comphist.dat"
-  'fundamental-mode
-  '(global-whitespace-mode global-auto-revert-mode whole-line-or-region-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/fix_db.sql"
-  "fix_db.sql"
-  'sql-mode
-  '(global-whitespace-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  352
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/etc/Makefile"
-  "Makefile<2>"
-  'makefile-bsdmake-mode
-  '(global-whitespace-mode linum-mode global-auto-revert-mode whole-line-or-region-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  9
-  '(nil nil)
-  nil
-  nil
-  '((indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/requirements.dev.txt"
-  "requirements.dev.txt"
-  'text-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/etc/stopwords.txt"
-  "stopwords.txt"
-  'text-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/migrate"
-  "migrate"
-  'sh-mode
-  '(global-whitespace-mode auto-complete-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  3
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/docs/zvooq.db.rst"
-  "zvooq.db.rst"
-  'rst-mode
-  '(global-whitespace-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  27
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/docs/zvooq.web.rst"
-  "zvooq.web.rst"
-  'rst-mode
-  '(global-whitespace-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  27
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/docs/working-with-stage.rst"
-  "working-with-stage.rst"
-  'rst-mode
-  '(global-whitespace-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1251
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/docs/git-usage.rst"
-  "git-usage.rst"
-  'rst-mode
-  '(global-whitespace-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  43
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/ZVOOQ_TODO"
-  "ZVOOQ_TODO"
-  'fundamental-mode
-  '(global-whitespace-mode global-auto-revert-mode whole-line-or-region-mode workgroups-mode ecb-minor-mode)
-  286
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/composite.dev.conf"
-  "composite.dev.conf"
-  'conf-unix-mode
-  '(global-whitespace-mode linum-mode global-auto-revert-mode whole-line-or-region-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  94
-  '(80 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/ZMIGRATE_TODO"
-  "ZMIGRATE_TODO"
-  'fundamental-mode
-  '(global-whitespace-mode global-auto-revert-mode whole-line-or-region-mode workgroups-mode ecb-minor-mode)
-  7
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/TODO"
-  "TODO"
-  'fundamental-mode
-  '(global-whitespace-mode linum-mode global-auto-revert-mode whole-line-or-region-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  60
-  '(49 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/data/sms/PSMS_Zvooq_NAT.xls"
-  "PSMS_Zvooq_NAT.xls"
-  'fundamental-mode
-  '(global-whitespace-mode global-auto-revert-mode whole-line-or-region-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . no-conversion)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/django.dev.conf"
-  "django.dev.conf"
-  'conf-unix-mode
-  '(global-whitespace-mode linum-mode global-auto-revert-mode whole-line-or-region-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  5
-  '(36 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/cron/assist_check_payments"
-  "assist_check_payments"
-  'sh-mode
-  '(global-whitespace-mode auto-complete-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  12
-  '(146 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/bin/.empty"
-  ".empty"
-  'fundamental-mode
-  '(global-whitespace-mode global-auto-revert-mode whole-line-or-region-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  nil)
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/Install.txt"
-  "Install.txt"
-  'text-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  115
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . utf-8-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/contrib/closure-library/AUTHORS"
-  "AUTHORS"
-  'fundamental-mode
-  '(global-whitespace-mode global-auto-revert-mode whole-line-or-region-mode workgroups-mode ecb-minor-mode)
-  207
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/Makefile"
-  "Makefile"
-  'makefile-bsdmake-mode
-  '(global-whitespace-mode linum-mode global-auto-revert-mode whole-line-or-region-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((indent-tabs-mode . t) (buffer-file-coding-system . undecided-unix)))
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
   "/Users/gennad/z/zvq/requirements.zvooq.txt"
   "requirements.zvooq.txt"
   'text-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  141
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode)
+  195
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/z/zvq/requirements.dev.txt"
+  "requirements.dev.txt"
+  'text-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode)
+  162
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/z/zvq/requirements.txt"
+  "requirements.txt"
+  'text-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode)
+  1699
+  '(1271 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/z/zvq/zvooq/runtime.py"
+  "runtime.py"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  6088
+  '(5641 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/z/zvq/src/zvqbilling/zvqbilling/zvqwm/models.py"
+  "models.py"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  3116
+  '(3050 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/z/zvq/lib/python2.7/site-packages/django/contrib/sessions/models.py"
+  "models.py<2>"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  335
+  '(421 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/z/zvq/djangoproj/apps/zvq/views/download.py"
+  "download.py"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  9636
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/z/zvooq-api/lib/api/user/model.js"
+  "model.js"
+  'js2-mode
+  '(global-whitespace-mode auto-complete-mode linum-mode global-auto-revert-mode whole-line-or-region-mode undo-tree-mode workgroups-mode)
+  1273
+  '(1273 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/z/zvooq-api/package.json"
+  "package.json"
+  'js-mode
+  '(global-whitespace-mode auto-complete-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode)
+  761
   '(nil nil)
   nil
   nil
   '((buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/zvq/.gitignore"
-  ".gitignore"
-  'fundamental-mode
-  '(global-whitespace-mode global-auto-revert-mode whole-line-or-region-mode workgroups-mode ecb-minor-mode)
-  1140
-  '(101 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/etc/sphinx.conf"
-  "sphinx.conf"
-  'conf-unix-mode
-  '(global-whitespace-mode linum-mode global-auto-revert-mode whole-line-or-region-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1195
-  '(332 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/djangoproj/apps/zvq_webmoney/views.py"
-  "views.py"
+  "/Users/gennad/z/zvq/zvooq/web/views/payment.py"
+  "payment.py"
   'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  396
   '(nil nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/zvq/zvooq/settings.py"
-  "settings.py<2>"
+  "/Users/gennad/z/zvq/djangoproj/settings_local.stage.py"
+  "settings_local.stage.py"
   'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/djangoproj/settings_local.py"
-  "settings_local.py"
-  'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  140
+  '(4015 nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
@@ -405,96 +207,74 @@
   "/Users/gennad/z/zvq/djangoproj/settings.py"
   "settings.py"
   'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  18212
+  '(1 nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/zvq/deploy/sphinx.py"
-  "sphinx.py"
+  "/Users/gennad/z/zvq/zvooq/web/views/library.py"
+  "library.py"
   'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  2305
+  '(2932 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/z/zvq/djangoproj/apps/zvq/subscribers.py"
+  "subscribers.py"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  51
+  '(392 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/z/zvq/src/zvqbilling/zvqbilling/zvqwm/config.py"
+  "config.py"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  260
   '(nil nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/zvq/deploy/setup.py"
-  "setup.py"
+  "/Users/gennad/z/zvq/src/zvqbilling/zvqbilling/zvqwm/views.py"
+  "views.py<2>"
   'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  2720
+  '(2928 nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/zvq/deploy/fcgi.py"
-  "fcgi.py"
+  "/Users/gennad/z/zvq/djangoproj/apps/zvq/views/fileserver.py"
+  "fileserver.py"
   'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  7
+  '(13869 nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/zvq/deploy/environments/helpers.py"
-  "helpers.py"
+  "/Users/gennad/z/zvq/zvooq/utils/signature.py"
+  "signature.py"
   'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/deploy/environments/default.py"
-  "default.py"
-  'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/deploy/environments/local.sample.py"
-  "local.sample.py"
-  'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/deploy/db.py"
-  "db.py"
-  'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
-
-(desktop-create-buffer 206
-  "/Users/gennad/z/zvq/fabfile.py"
-  "fabfile.py"
-  'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  606
   '(nil nil)
   nil
   nil
@@ -504,42 +284,108 @@
   "/Users/gennad/z/zvq/zvooq/events.py"
   "events.py"
   'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  2228
+  '(959 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/z/zvq/zvooq/api/vk.py"
+  "vk.py<2>"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  143
+  '(143 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/z/zvq/zvooq/web/views/vk.py"
+  "vk.py"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  701
+  '(662 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/usr/local/Cellar/python/2.7.4/Frameworks/Python.framework/Versions/2.7/lib/python2.7/glob.py"
+  "glob.py"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  607
   '(nil nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/zvq/deploy/uwsgi.py"
-  "uwsgi.py"
-  'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
+  "/Users/gennad/z/zvq/Install.txt"
+  "Install.txt"
+  'text-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode)
   1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/z/zvqbilling/zvqbilling/zvqwm/views.py"
+  "views.py"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  2289
   '(nil nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/zvq/bin/calcdeps.py"
-  "calcdeps.py"
+  "/Users/gennad/z/zvqbilling/zvqbilling/zvqwm/urls.py"
+  "urls.py"
   'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
-  1
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  143
   '(nil nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/Users/gennad/z/zvq/zvooq/authz.py"
-  "authz.py"
+  "/Users/gennad/book2/crawler.py"
+  "crawler.py"
   'python-mode
-  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode ecb-minor-mode)
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  331
+  '(331 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/gennad/book2/singletone.py"
+  "singletone.py"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
   1
-  '(nil nil)
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/usr/local/lib/python3.3/site-packages/mypy/build.py"
+  "build.py"
+  'python-mode
+  '(global-whitespace-mode auto-complete-mode yas/minor-mode linum-mode outline-minor-mode global-auto-revert-mode whole-line-or-region-mode auto-highlight-symbol-mode undo-tree-mode workgroups-mode projectile-mode)
+  7229
+  '(7103 nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
