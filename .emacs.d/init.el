@@ -618,8 +618,8 @@ message-mode text-mode))
 (define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
 
 ;; How navigation keys
-(global-set-key (kbd "C-j") 'other-window)
-(global-set-key (kbd "C-;") 'smex)
+(global-set-key (kbd "C-j") 'smex)
+(global-set-key (kbd "C-;") 'other-window)
 (global-set-key (kbd "C-k") 'ido-switch-buffer)
 
 (require 'sr-speedbar)
@@ -742,7 +742,6 @@ message-mode text-mode))
 
 ;; (require 'auto-complete-config)
 ;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
-
 
 
 ;; Live completion with auto-complete
