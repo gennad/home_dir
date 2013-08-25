@@ -374,9 +374,18 @@ message-mode text-mode))
 ;;(add-to-list 'load-path "~/.emacs.d/plugins/autocomplete/")
 ;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/plugins/autocomplete/ac-dict")
 
-;;(add-to-list 'load-path "/usr/local/Cellar/emacs/24.2/Emacs.app/Contents/share/emacs/site-lisp/w3m")
 ;;(require 'w3m-load)
+(setq browse-url-browser-function 'w3m-browse-url)
+(autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t)
+;; optional keyboard short-cut
+(global-set-key "\C-xm" 'browse-url-at-point)
 (setq w3m-use-cookies t)
+(setq w3m-coding-system 'utf-8
+          w3m-file-coding-system 'utf-8
+          w3m-file-name-coding-system 'utf-8
+          w3m-input-coding-system 'utf-8
+          w3m-output-coding-system 'utf-8
+          w3m-terminal-coding-system 'utf-8)
 
 
 ; M-w to copy line, C-w to delete (without C-a)
@@ -803,3 +812,5 @@ message-mode text-mode))
 ;;   (add-to-list 'ac-sources 'ac-source-yasnippet))
 
 ;; (add-hook 'python-mode-hook 'ac-python-mode-setup)
+
+(setq w3m-command "/usr/local/bin/w3m")
