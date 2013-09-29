@@ -1,0 +1,31 @@
+<%pre>
+#include "accumulator.h"
+</%pre>
+<%args>
+double value = 0.0;
+bool add;
+bool reset;
+</%args>
+<%session>
+Accumulator accumulator;
+</%session>
+<%cpp>
+if (add)
+  accumulator.add(value);
+if (reset)
+  accumulator.reset();
+</%cpp>
+<html>
+ <head>
+  <title>ecpp application accumulate</title>
+ </head>
+ <body>
+  <h1>accumulate</h1>
+  <form>
+   <input type="text" name="value" value="<$ value $>">
+   <input type="submit" name="add" value="add the value">
+   <input type="submit" name="reset" value="reset the value">
+  </form>
+  The sum so far is <$ accumulator.sum() $>
+ </body>
+</html>
